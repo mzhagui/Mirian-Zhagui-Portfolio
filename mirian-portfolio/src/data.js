@@ -5,14 +5,14 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://mzhagui.github.io/TRAVELICITY/",
   },
   {
     title: "The Best of Makeup",
     subtitle: "React and Python",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
+    image: "https://i.imgur.com/wcQvbvd.png",
     link: "https://gracious-darwin-67e921.netlify.app/",
   },
   {
