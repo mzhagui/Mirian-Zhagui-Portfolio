@@ -16,7 +16,7 @@ export default function Projects() {
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
-              href={project.link}
+              href={project.link} target="_blank"
               key={project.image}
               className="sm:w-1/2 w-100 p-4">
               <div className="flex relative">
@@ -33,9 +33,17 @@ export default function Projects() {
                     {project.title}
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
+                  
                 </div>
               </div>
+              <div>
+              <a href={project.github} target="_blank" >
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="text describing the image" className= "h-10 w-30"/>
+</a>
+             </div>
+        
             </a>
+            
           ))}
         </div>
       </div>

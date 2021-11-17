@@ -9,8 +9,7 @@ export default function About() {
         
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
           &#x1F44B; &nbsp; I'm Mirian Zhagui.
-          <br className="hidden lg:inline-block" />I love to build amazing
-          apps.
+          <br className="hidden lg:inline-block" />I love displaying my creativity through coding.
         </h1>
           <p className="mb-8 leading-relaxed">
             
