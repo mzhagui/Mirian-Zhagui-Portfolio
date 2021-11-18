@@ -51,6 +51,10 @@ export const skills = [
   {
     name: "API",
     link:"https://cdn-icons-png.flaticon.com/512/627/627558.png"
+  },
+  {
+    name: "PostgreSQL",
+    link:"www.google.com"
   }
 
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { projects } from "../data";
+import { Link } from 'react-router-dom'
 
 export default function Projects() {
   return (
@@ -16,7 +17,7 @@ export default function Projects() {
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
-              href={project.link} target="_blank"
+              href={project.link} target="_blank" rel="noopener noreferrer"
               key={project.image}
               className="sm:w-1/2 w-100 p-4">
               <div className="flex relative">
@@ -25,21 +26,23 @@ export default function Projects() {
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={project?.image}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                <div className="px-8 py-10 relative z-10 w-full  border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-montserrat font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                  <h1 className="title-font text-lg font-montserrat font-medium text-white mb-3">
                     {project.title}
                   </h1>
-                  <p className="leading-relaxed">{project.description}</p>
+                  <p className="leading-relaxed font-montserrat">{project.description}</p>
                   
                 </div>
               </div>
               <div>
-              <a href={project.github} target="_blank" >
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="text describing the image" className= "h-10 w-30"/>
-</a>
+                <>
+              <Link to={project.github} target="_blank" rel="noopener noreferrer" >
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="githubicon" className= "h-10 w-30 flex "/>
+</Link>
+</>
              </div>
         
             </a>
