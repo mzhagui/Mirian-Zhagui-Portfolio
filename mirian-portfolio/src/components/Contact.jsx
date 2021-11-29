@@ -23,6 +23,7 @@ Thanks for visiting my page, for more information or to contact me please do so 
 <img className="h-20 w-20" src="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png" alt="linkedin"/>
         </a>
         </div>
+        
     </div>
     </section>
   )
